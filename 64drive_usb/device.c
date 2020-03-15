@@ -96,7 +96,7 @@ void device_open(ftdi_context_t *c)
 void device_close(ftdi_context_t *c)
 {
 	c->status = FT_Close(c->handle);
-	//_printf(info[INFO_DONE]);
+	_printf(info[INFO_DONE]);
 }
 
 u32 device_getver(ftdi_context_t *c, u32 *magic)

@@ -61,17 +61,17 @@ void prog_draw(u32 amount, u32 total)
 	int blocks_done = (int)(((float)amount / (float)total)*64.0f);
 	int blocks_left = 64-blocks_done;
 	int i;
-	printf("\r   ");
-	for(i = 0; i < blocks_done; i++) printf("\xdb");
-	for(i = 0; i < blocks_left; i++) printf("\xb0");
+	//printf("\r   ");
+	//for(i = 0; i < blocks_done; i++) printf("\xdb");
+	//for(i = 0; i < blocks_left; i++) printf("\xb0");
 }
 
 void prog_erase()
 {
 	int i;
 	// erase progress bar
-	printf("\r");	
-	for(i = 0; i < 79; i++) printf(" "); printf("\r");	
+	//printf("\r");	
+	//for(i = 0; i < 79; i++) printf(" "); printf("\r");	
 }
 
 void fail(FT_STATUS st)
